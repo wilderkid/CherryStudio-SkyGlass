@@ -1,251 +1,72 @@
-# CherryStdio-Aero
+# CherryStdio - Sky Mirror
 
 English | [简体中文](README-cmn_CN.md) | [繁體中文](README-cmn_TW.md) | [廣東話](README-jyut.md)
 
-> [Aero: **A**uthentic, **E**nergetic, **R**eflective and **O**pen](https://en.wikipedia.org/wiki/Windows_Aero)
+> [Sky Mirror: **S**erenity, **K**indness, **Y**outhful, **M**ystery, **I**ntuition, **R**adiance, **R**eflection](此处可以替换为你自己定义的主题关键词)
 
-给你的 [Cherry Studio](https://github.com/CherryHQ/cherry-studio) 带来现代的 Aero 主题
+给你的 [Cherry Studio](https://github.com/CherryHQ/cherry-studio) 带来“天空之境”主题的视觉体验。
 
 > [!NOTE]
-> 毛玻璃效果仅在 macOS 上的 Cherry Studio 中有效。
+> 某些视觉效果可能在特定操作系统或 Cherry Studio 版本中有所差异。
 
 ## 截图
 
-![image](https://github.com/user-attachments/assets/8a3fa8a6-e28b-4628-90c8-aadb00e7437a)
-![image](https://github.com/user-attachments/assets/0865e220-8398-4564-acc7-33b04220d015)
+![image](**[请替换为你的主题截图1的链接]**)**
+![image](**[请替换为你的主题截图2的链接]**)**
 
 <!--
-![image](https://github.com/user-attachments/assets/f1b45077-49e7-4c04-8c5f-b5099d1020aa)
-![image](https://github.com/user-attachments/assets/a1203c88-9efa-489b-b3e7-a5f41961fd9e)
-![image](https://github.com/user-attachments/assets/86315ef8-9bdc-4525-a4cb-b143f8b80)
-![image](https://github.com/user-attachments/assets/76d6ffdd-a6be-4694-98b8-69a788208b80)
+![image](**[请替换为你的主题截图3的链接]**)**
+![image](**[请替换为你的主题截图4的链接]**)**
+![image](**[请替换为你的主题截图5的链接]**)**
+![image](**[请替换为你的主题截图6的链接]**)**
 -->
 
 ## 开始使用
 
-将以下 CSS 复制到 `Settings` -> `Display Settings` -> `Custom CSS`
+复制以下 CSS 到 `Settings` -> `Display Settings` -> `Custom CSS`
 
-![image](https://github.com/user-attachments/assets/a8e595fb-d093-4972-b439-6dfb9029c9ae)
+![image](**[请替换为展示“自定义 CSS”设置界面的截图链接]**)**
 
 CSS
 
 ```css
-/* Cherry Studio Aero Theme */
-/* https://github.com/hakadao/CherryStudio-Aero */
+/* Cherry Studio Sky Mirror Theme */
+/*  [请替换为你的主题的 GitHub 仓库链接，如果有的话]  */
+
+/*  **[在这里开始编写你的 CSS 代码]**  */
+/*  **[你可以定义颜色、背景、字体等，使界面呈现“天空之境”的风格]**  */
+/*  **[例如，可以使用渐变、半透明效果，以及与天空和水面相关的颜色]**  */
+/*  **[请注意，这里的 CSS 代码是示例，你需要根据你的设计进行修改]**  */
 
 body[theme-mode='light'] {
-  --fill-1: rgba(120 120 122 / 0.12);
-  --fill-2: rgba(120 120 122 / 0.2);
-  --fill-3: rgba(120 120 122 / 0.28);
-
-  --color-white: var(--fill-1);
-  --color-white-soft: var(--fill-2);
-  --color-white-mute: var(--fill-3);
-
-  --color-list-item: var(--fill-1);
-  --color-list-item-hover: var(--fill-2);
-
-  --navbar-background: hsl(240, 100%, 99.4%);
-
-  --aero-background-1: rgba(255 255 255 / 0.2);
-  --aero-background-2: rgba(255 255 255 / 0.4);
-  --aero-background-3: rgba(255 255 255 / 0.6);
-  --aero-background-solid: rgba(255 255 255 / 1);
-
-  /* remove the background of the navbar to make it more transparent on macOS */
-  --navbar-background-mac: rgba(255 255 255 / 0.3);
+  /*  **[浅色主题的样式，例如：]**  */
+  --background-color: #E0F7FA; /*  浅蓝色背景  */
+  --text-color: #333;
+  --primary-color: #00BCD4; /*  强调色  */
+  /*  **[更多样式...]**  */
 }
 
 body[theme-mode='dark'] {
-  --aero-background-1: rgba(22 22 22 / 0.2);
-  --aero-background-2: rgba(22 22 22 / 0.4);
-  --aero-background-3: rgba(22 22 22 / 0.6);
-  --aero-background-solid: rgba(22 22 22 / 1);
+  /*  **[深色主题的样式，例如：]**  */
+  --background-color: #263238; /*  深蓝色背景  */
+  --text-color: #fff;
+  --primary-color: #80DEEA; /*  强调色  */
+  /*  **[更多样式...]**  */
 }
 
-:root {
-  --fill-1: rgba(120 120 122 / 0.15);
-  --fill-2: rgba(120 120 122 / 0.2);
-  --fill-3: rgba(120 120 122 / 0.25);
+/*  **[以下是针对 Cherry Studio 特定组件的样式示例，请根据你的主题调整]**  */
 
-  --color-black: var(--fill-1);
-  --color-black-soft: var(--fill-2);
-  --color-black-mute: var(--fill-3);
-
-  --color-list-item: var(--fill-1);
-  --color-list-item-hover: var(--fill-2);
+/*  聊天窗口背景  */
+#chat {
+  background-color: var(--background-color);
 }
 
-/* reset ant design variables */
-body[theme-mode='light'] *,
-body[theme-mode='light'] [class^='ant'] {
-  --ant-select-selector-bg: var(--aero-background-1);
-  --ant-color-bg-container: var(--aero-background-1);
-  --ant-segmented-item-selected-bg: var(--aero-background-3);
-  --ant-button-default-bg: var(--aero-background-1);
-  --ant-radio-button-bg: var(--aero-background-1);
+/*  输入框样式  */
+#inputbar {
+  background-color: rgba(255, 255, 255, 0.1); /*  半透明背景  */
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
 }
 
-/* reset ant design variables */
-body[theme-mode='dark'] *,
-body[theme-mode='dark'] [class^='ant'] {
-  --ant-select-selector-bg: var(--fill-1);
-  --ant-color-bg-container: var(--fill-1);
-  --ant-segmented-item-selected-bg: var(--fill-3);
-  --ant-button-default-bg: var(--fill-1);
-  --ant-radio-button-bg: var(--fill-1);
-}
-
-/* Fix new window background issue to adapt to new UI */
-[class^='PageContainer'] {
-  background-color: var(--aero-background-solid) !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  body[theme-mode='light'] {
-    background: rgba(255 255 255 / 0.3);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body[theme-mode='dark'] {
-    background: rgba(0 0 0 / 0.2);
-  }
-}
-
-[theme-mode='light'] #content-container,
-[theme-mode='light'] .minapp-drawer .ant-drawer-body {
-  background-color: rgba(120 120 122 / 0.05);
-}
-
-[theme-mode='dark'] #content-container,
-[theme-mode='dark'] .minapp-drawer .ant-drawer-body {
-  background-color: rgba(120 120 122 / 0.05);
-}
-
-.home-tabs,
-[class^='ProgramSection'],
-[class^='IconSection'],
-#messages,
-[class^='SettingContainer'] {
-  background-color: transparent;
-}
-
-[class^='TopicListItem'] .menu {
-  background-color: transparent !important;
-}
-
-#inputbar,
-.system-prompt,
-[class^='CardContent'],
-[class^='ServerCard'] {
-  background-color: var(--fill-1);
-}
-
-[theme-mode='light'] #chat,
-[theme-mode='light'] [class^='SettingGroup'],
-[theme-mode='light'] [class^='MainContainer'],
-[theme-mode='light'] [class^='MainContent'] {
-  background-color: var(--aero-background-2);
-}
-
-/* On the right side of "Model Provider" in Settings */
-[theme-mode='light']
-  [class^='ProviderListContainer']
-  + [class^='SettingContainer'] {
-  background: var(--aero-background-2) !important;
-}
-
-[theme-mode='dark'] #chat,
-[theme-mode='dark'] [class^='SettingGroup'],
-[theme-mode='dark'] [class^='MainContainer'],
-[theme-mode='dark'] [class^='MainContent'] {
-  background-color: var(--aero-background-1);
-}
-
-/* On the right side of "Model Provider" in Settings */
-[theme-mode='dark']
-  [class^='ProviderListContainer']
-  + [class^='SettingContainer'] {
-  background: var(--aero-background-1) !important;
-}
-
-/* https://github.com/hakadao/CherryStudio-Aero/issues/2 */
-/* search result dialog becomes too transparent: https://github.com/hakadao/CherryStudio-Aero/issues/11 */
-[theme-mode='light'] [class^='ant-modal'],
-[theme-mode='light'] #root[style*='background: var(--color-white)'],
-/* https://github.com/hakadao/CherryStudio-Aero/issues/14 */
-/* selection assitant panel */
-[theme-mode='light'] [class^='WindowFrame'],
-/* https://github.com/hakadao/CherryStudio-Aero/issues/13#issuecomment-3105519544 */
-/* Tooltip background is too transparent */
-[theme-mode='light'] .ant-tooltip-inner {
-  --color-white: #ffffff;
-  --color-white-soft: rgba(255, 255, 255, 0.8);
-  --color-white-mute: rgba(255, 255, 255, 0.94);
-
-  --color-background: var(--color-white);
-  --color-background-soft: var(--color-white-soft);
-  --color-background-mute: var(--color-white-mute);
-
-  --ant-modal-content-bg: var(--aero-background-solid);
-}
-[theme-mode='dark'] [class^='ant-modal'],
-/* https://github.com/hakadao/CherryStudio-Aero/issues/14 */
-/* selection assitant panel */
-[theme-mode='dark'] [class^='WindowFrame'],
-/* https://github.com/hakadao/CherryStudio-Aero/issues/13#issuecomment-3105519544 */
-/* Tooltip background is too transparent */
-[theme-mode='dark'] .ant-tooltip-inner {
-  --color-black: #181818;
-  --color-black-soft: #222222;
-  --color-black-mute: #333333;
-
-  --color-background: var(--color-black);
-  --color-background-soft: var(--color-black-soft);
-  --color-background-mute: var(--color-black-mute);
-
-  --ant-modal-content-bg: var(--aero-background-solid);
-}
-.bubble .message-user,
-[class^='ant'] {
-  --color-black: #181818;
-  --color-black-soft: #222222;
-  --color-black-mute: #333333;
-  --color-white: #ffffff;
-  --color-white-soft: rgba(255, 255, 255, 0.8);
-  --color-white-mute: rgba(255, 255, 255, 0.94);
-
-  --chat-text-user: var(--color-black);
-}
-
-/* Fix Quick Assistant's transparent background on Windows (text hard to see) */
-body[theme-mode='light'][os='windows'] {
-  --color-background: hsla(0 0 100% / 1);
-  --color-background-opacity: hsla(0 0 90% / 0.6);
-}
-body[theme-mode='dark'][os='windows'] {
-  --color-background: hsla(0 0 8% / 1);
-  --color-background-opacity: hsla(0 0 8% / 0.6);
-}
-
-/* https://github.com/hakadao/CherryStudio-Aero/issues/5 */
-/* Quick panel text hard to see */
-[class^='QuickPanelBody'] {
-  background-color: var(--aero-background-3) !important;
-}
-
-/* https://github.com/hakadao/CherryStudio-Aero/issues/10 */
-/* The drawer title content is hard to read when open the mini app */
-#root[style*='background: var(--color-background)'],
-.ant-drawer-content[style*='background-color: var(--color-background)'],
-/* https://github.com/hakadao/CherryStudio-Aero/issues/12 */
-/* Search bar background is too transparent */
-[class^='SearchBarContainer'] {
-  background: var(--aero-background-solid) !important;
-}
-
-/* https://github.com/hakadao/CherryStudio-Aero/issues/15 */
-.markdown [class^='Container'] [class^='Header']+[class^='Content'] {
-  background: transparent;
-}
+/*  **[更多组件样式，请根据你的设计进行调整]**  */
+/*  **[例如：侧边栏、菜单、按钮等]**  */
